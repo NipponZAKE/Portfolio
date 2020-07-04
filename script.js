@@ -1,14 +1,14 @@
 $(function () {
-  $(".year_header").nextAll().hide();
+  $(".year_header:not(.down)").nextAll().hide();
   $(".year_header").click(function () {
     const title = $(this);
-    if (title.nextAll().is(":hidden")) {
+    if (title.nextAll().is(":hidden") && !title.hasClass("down")) {
       title.nextAll().slideDown();
-      title.nextAll().addClass("slided");
-    } else {
+      title.toggleClass("down");
+    } else if (!title.nextAll().is(":hidden") && title.hasClass("down")) {
       title.nextAll().slideUp();
+      title.toggleClass("down");
     }
-    title.toggleClass("down");
   });
 });
 
@@ -24,15 +24,15 @@ $(document).ready(function () {
     },
     speed: 1000,
     direction: "horizontal",
-    //loop: true,
+    loop: true,
     effect: "fade",
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
   });
 
   $("#profile_button").click(function () {
-    console.log("profile clicked!");
     const target = "#profile_wrapper";
     scrollTo(target);
     return false;
