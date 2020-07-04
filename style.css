@@ -1,6 +1,7 @@
 body {
-    background-color: #dbdbdb;
-    width: 100%;
+    background-color: #C4C4C4;
+    width: 95%;
+    margin: 0 auto;
 }
 
 header {
@@ -17,7 +18,7 @@ header {
 
 #content {
     width: 100%;
-    margin: 0 1rem;
+    margin: 0 auto;
 }
 
 #profile_wrapper {
@@ -29,11 +30,29 @@ header {
     flex: 1.2;
 }
 
-#profile_img>img {
+#profile_img>img,
+.illust_img>img {
     max-width: 100%;
     height: auto;
 }
 
 #profile_content {
     flex: 1;
+}
+
+.year_wrapper {
+    background-color: #dbdbdb;
+}
+
+.illust_content {
+    display: flex;
+}
+
+.illust_content>div {
+    flex: 1;
+}
+
+.year_header {
+    display: flex;
+    font-size: 36px;
 }
