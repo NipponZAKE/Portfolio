@@ -7,6 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
@@ -50,20 +51,40 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div id="profile_content">
-                <p>日本酒</p>
-                <p>NipponZAKE</p>
-                <p>大阪在住 </p>
-                <P>男の絵と色鮮やかな絵が好き</P>
-                <p> 今年の目標は漫画描いてコミティア出展</p>
-                <p>作業環境</p>
-                <p>PC:surface pro4</p>
-                <p>soft:CLIP STUDIO,Photoshop</p>
+                <div class="profile_main">
+                    <div class="profile_title">
+                        <p>日本酒</p>
+                    </div>
+                    <div class="profile_item">
+                        <p class="profile_value">NipponZAKE</p>
+                    </div>
+                    <div class="profile_item">
+                        <p class="profile_value">大阪在住</p>
+                    </div>
+                    <div class="profile_item">
+                        <p class="profile_value">男の絵と</p>
+                        <p>色鮮やかな絵が好き</p>
+                    </div>
+                    <br>
+                    <div class="profile_item">
+                        <p class="profile_value">使用ソフト</p>
+                        <p>ClipStudio</p>
+                        <p>Photoshop</p>
+                    </div>
+                    <div class="profile_item bottom">
+                        <p>Twitter</p>
+                        <p>@NipponZAKE</p>
+                    </div>
 
+
+                </div>
+                <!--
                 <div class="icons">
                     <a href="https://twitter.com/NipponZAKE">
                         <i class="fab fa-2x fa-twitter"></i>
                     </a>
                 </div>
+                -->
             </div>
         </div>
 
@@ -77,15 +98,16 @@
                         <span>2020</span>
                     </div>
                 </div>
-                <div class="year_contet">
+                <div class="year_content">
                     <div class="illust_content">
                         <div class="illust_img">
                             <img src="./img/S__76882063.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>東北きりたん　Fanart</p>
-                            <p>二次創作</p>
-                            <p>友人に頼まれてSNSのアイコン用に描きました</p>
+                            <p class="illust_title">東北きりたん　Fanart</p>
+                            <p class="illust_desc">二次創作</p>
+                            <p class="illust_desc">友人に頼まれてSNSのアイコン用に描きました</p>
+                            <p class="illusted_at">2020/07</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -93,9 +115,11 @@
                             <img src="./img/vtuber.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>Live2D(仮)</p>
-                            <p>Live2Dを使ってみたかったので描きました。</p>
-                            <p>途中で就活で忙しくなり色々と途中のままなのでそのうち完成させたいです。</p>
+                            <p class="illust_title">Live2D(仮)</p>
+                            <p class="illust_desc">Live2Dを使ってみたかったので描きました。</p>
+                            <p class="illust_desc">途中で就活で忙しくなり色々と途中のままなのでそのうち完成させたいです。</p>
+                            <p class="illusted_at">2020/07</p>
+
                         </div>
                     </div>
                     <div class="illust_content">
@@ -103,9 +127,9 @@
                             <img src="./img/iro.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>同人誌ボツ絵</p>
-                            <p>主催したR-18同人誌の没絵です</p>
-
+                            <p class="illust_title">同人誌ボツ絵</p>
+                            <p class="illust_desc">主催したR-18同人誌の没絵です</p>
+                            <p class="illusted_at">2020/07</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -113,8 +137,9 @@
                             <img src="./img/nenngaztouu.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>2020年賀状</p>
-                            <p>今風の子を描きたくて通販サイト眺めながら描きました</p>
+                            <p class="illust_title">2020年賀状</p>
+                            <p class="illust_desc">今風の子を描きたくて通販サイト眺めながら描きました</p>
+                            <p class="illusted_at">2020/07</p>
                         </div>
                     </div>
                 </div>
@@ -128,18 +153,19 @@
                         <span>2019</span>
                     </div>
                 </div>
-                <div class="year_contet">
+                <div class="year_content">
                     <div class="illust_content">
                         <div class="illust_img">
                             <img src="./img/kagaminnenrrr.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>鏡音レンanniversary</p>
-                            <p>二次創作</p>
-                            <p>鏡音レンくんの誕生日に描きました</p>
-                            <p>
+                            <p class="illust_title">鏡音レンanniversary</p>
+                            <p class="illust_desc">二次創作</p>
+                            <p class="illust_desc">鏡音レンくんの誕生日に描きました</p>
+                            <p class="illust_desc">
                                 ピアプロの公式Twitterで紹介していただきました
                             </p>
+                            <p class="illusted_at"></p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -147,9 +173,9 @@
                             <img src="./img/postcard_tate_RGB.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -157,9 +183,9 @@
                             <img src="./img/ずらし.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -167,9 +193,9 @@
                             <img src="./img/１０.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -177,9 +203,9 @@
                             <img src="./img/１１.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -187,9 +213,9 @@
                             <img src="./img/renn.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -197,9 +223,9 @@
                             <img src="./img/春パネ完成.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -207,9 +233,9 @@
                             <img src="./img/ひなり.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -217,9 +243,9 @@
                             <img src="./img/完成 白.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                 </div>
@@ -233,15 +259,15 @@
                         <span>2018</span>
                     </div>
                 </div>
-                <div class="year_contet">
+                <div class="year_content">
                     <div class="illust_content">
                         <div class="illust_img">
                             <img src="./img/2.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -249,9 +275,9 @@
                             <img src="./img/asutoruko.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -259,9 +285,9 @@
                             <img src="./img/bbb.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -269,9 +295,9 @@
                             <img src="./img/えらいぞ秋パネル.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -279,9 +305,9 @@
                             <img src="./img/annsyuunenn.png" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                     <div class="illust_content">
@@ -289,13 +315,15 @@
                             <img src="./img/pnaeruuu.jpg" />
                         </div>
                         <div class="illust_description">
-                            <p>タイトル</p>
-                            <p>本文</p>
-                            <p>作成日</p>
+                            <p class="illust_title">タイトル</p>
+                            <p class="illust_desc">本文</p>
+                            <p class="illusted_at">作成日</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 
 </html>
