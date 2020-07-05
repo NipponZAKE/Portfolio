@@ -197,6 +197,9 @@ a:active {
 
 .illust_description>p {
     font-family: 'Noto Sans JP', sans-serif;
+    flex: 0.66;
+    margin-left: 0.5rem;
+    font-size: 12px;
 }
 
 .illusted_at {
