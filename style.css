@@ -12,6 +12,7 @@ header {
     width: 100%;
     background-color: #c4c4c4;
     top: 0;
+    left: 0;
     z-index: 999;
 }
 
