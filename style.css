@@ -217,3 +217,12 @@ a:active {
     position: absolute;
     bottom: 2rem;
 }
+
+@media screen and (min-width:1024px) {
+    #profile_wrapper {
+        max-height: calc(100vh - 70px);
+    }
+    .swiper-slide>img {
+        max-height: 90%;
+    }
+}
