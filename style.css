@@ -71,7 +71,7 @@ header {
 #profile_content {
     flex: 0.66;
     margin-left: 1rem;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .year_wrapper {
@@ -197,7 +197,7 @@ a:active {
 }
 
 .illust_description>p {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     flex: 0.66;
     margin-left: 0.5rem;
     font-size: 12px;
@@ -218,11 +218,12 @@ a:active {
     bottom: 2rem;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     #profile_wrapper {
         max-height: calc(100vh - 70px);
     }
     .swiper-slide>img {
-        max-height: 90%;
+        /* profile_wrapper(100vh - 70px) = .swiper-slide>img(100vh - 86px) + pagination (16px)*/
+        max-height: calc(100vh - 86px);
     }
 }
